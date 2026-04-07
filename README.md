@@ -1,4 +1,4 @@
-# particle41
+# Particle41
 This README is prepared as part of the assessment for Particle41. It provides a step-by-step guide to deploy the SimpleTimeService Python application, covering the complete process from infrastructure provisioning to application deployment and access.
 
 # Directory structure
