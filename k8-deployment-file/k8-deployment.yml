@@ -5,8 +5,8 @@ metadata:
 spec:
   replicas: 2
   selector:
-    matchLabels:
-      app: particle41
+      matchLabels:
+          app: particle41
 
   strategy:
     type: RollingUpdate
