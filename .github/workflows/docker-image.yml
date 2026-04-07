@@ -1,0 +1,16 @@
+name: Build and Push docker image to dockerhub
+on:
+  push:
+    branches: main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code 
+        uses: actions/checkout@v4
+      
+      - name: Build the Docker image
+        run: |
+            docker build -t particle41 .
+            docker tag particle41 tapashdebdocker/particle41:latest
+            docker push tapashdebdocker/particle41:latest
